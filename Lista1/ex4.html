@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+
+<body>
+    <script>
+
+        let idades = [];
+        let idade = 0;
+        let menoresIdade = 0;
+        let maioresIdade = 0;
+
+        for (let i = 1; i <= 10; i++) {
+            idade = parseInt(prompt('Informe a idade: '));
+            console.log(`Idade ${i} - ${idade}`);
+            if (idade < 18) {
+                menoresIdade++; 
+            } else {
+                maioresIdade++; 
+            }
+        }
+
+        console.log("Menores de 18 anos:", menoresIdade);
+        console.log("Maiores de 18 anos:", maioresIdade);
+
+
+    </script>
+</body>
+
+</html>
